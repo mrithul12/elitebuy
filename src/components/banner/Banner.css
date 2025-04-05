@@ -1,0 +1,58 @@
+.banner{
+    background-color: #e6e6e6;
+    margin: 10px auto;
+    border-radius: 30px;
+    height: 70vh;
+    width: 95vw;
+    color: #1F509A;
+    font-weight: 600;
+    
+}
+.product-image img{
+    width: 70%;
+   
+}
+
+.product-category h1{
+    font-size:7vw ;
+    font-weight: 700;
+    color: #009990;
+    
+}
+.banner-button button{
+    background-color: #E50046;
+    padding: 10px;
+    border-radius: 20px;
+    width: 150px;
+    color: #ffff;
+}
+.banner-description p{
+    font-size: small;
+    color: black;
+}
+
+/* .product-title{
+    top: 20%;
+    left: 5%;
+}
+.product-brand{
+    top: 28%;
+    left: 5%;
+    font-weight: 700;
+}
+.product-category{
+    top: 35%;
+    left: 4.1%;
+}.product-category h1{
+    font-size: 8vw;
+    color: #2b2e4a;
+    font-weight: 700;
+    /* opacity: .5; */
+/* .product-image{
+    right: 0%;
+    top: 5%;
+    z-index: 2;
+}
+.product-image img{
+    width: 50%;
+} */ 
