@@ -74,7 +74,7 @@ const item =BannerData[bannerIndex]
               className="product-image m-0 d-flex justify-content-center align-content-center">
                 <img className="object-fit-contain" src={item.image} alt="" />
               </motion.div>
-              <div className="banner-description position-absolute bottom-0 text-end pe-3">
+              <div className="banner-description position-absolute bottom-0 text-end pe-3 d-sm-none">
                 <motion.p
                  key={item.id+"decription"}
                  initial={{ opacity: 0, scale: 0.3 }}

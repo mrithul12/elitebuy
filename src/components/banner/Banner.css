@@ -30,29 +30,8 @@
     font-size: small;
     color: black;
 }
-
-/* .product-title{
-    top: 20%;
-    left: 5%;
+@media only screen and (max-width :700px){
+    .banner-description{
+        display: none;
+    }
 }
-.product-brand{
-    top: 28%;
-    left: 5%;
-    font-weight: 700;
-}
-.product-category{
-    top: 35%;
-    left: 4.1%;
-}.product-category h1{
-    font-size: 8vw;
-    color: #2b2e4a;
-    font-weight: 700;
-    /* opacity: .5; */
-/* .product-image{
-    right: 0%;
-    top: 5%;
-    z-index: 2;
-}
-.product-image img{
-    width: 50%;
-} */ 
