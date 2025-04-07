@@ -1,4 +1,4 @@
-.banner{
+.banner {
     background-color: #e6e6e6;
     margin: 10px auto;
     border-radius: 30px;
@@ -6,34 +6,48 @@
     width: 95vw;
     color: #1F509A;
     font-weight: 600;
-    
-}
-.product-image img{
+  }
+  
+  .product-image img {
     width: 70%;
-   
-}
-
-.product-category h1{
-    font-size:7vw ;
+    object-fit: contain;
+  }
+  
+  /* Improved responsive font size */
+  .product-category h1 {
+    font-size: clamp(2rem, 7vw, 5rem);
     font-weight: 700;
     color: #009990;
-    
-}
-.banner-button button{
+  }
+  
+  .banner-button button {
     background-color: #E50046;
     padding: 10px;
     border-radius: 20px;
     width: 150px;
-    color: #ffff;
-}
-.banner-description p{
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .banner-button button:hover {
+    background-color: #c4003b;
+  }
+  
+  .banner-description p {
     font-size: small;
     color: black;
-}
-@media only screen and (max-width :700px){
-    .banner-description{
-        display: none;
-    }.banner{
-        height: 40vh;
+  }
+  
+  /* Responsive styles for small screens */
+  @media only screen and (max-width: 700px) {
+    .banner-description {
+      display: none;
     }
-}
+  
+    .banner {
+      height: 40vh;
+    }
+  }
+  
