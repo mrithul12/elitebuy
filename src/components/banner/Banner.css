@@ -30,6 +30,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
+ 
   
   .banner-button button:hover {
     background-color: #c4003b;
@@ -48,6 +49,23 @@
   
     .banner {
       height: 40vh;
+    }
+    .product-category h1{
+      font-size: 2em;
+    }
+  }
+  @media only screen and (max-width: 400px){
+    .product-title h4{
+      font-size: 15px;
+      
+    }.product-brand h1{
+      font-size: 15px;
+    }.product-category h1{
+      font-size: 15px;
+    }.banner-button button{
+      padding: 5px;
+      width: 100px;
+      font-size: 10px;
     }
   }
   

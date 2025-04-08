@@ -59,7 +59,7 @@ const Banner = () => {
               {item.category}
             </motion.h1>
           </div>
-          <div className="banner-button mt-5">
+          <div className="banner-button mt-2">
             <motion.button
               layout
               key={item.id + "button"}
