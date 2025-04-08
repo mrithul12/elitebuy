@@ -19,8 +19,8 @@ const Banner = () => {
   return (
     <AnimatePresence initial={false} mode="wait">
       <div className="banner overflow-hidden d-flex">
-        <div className="banner-details col-8 d-flex flex-column justify-content-center">
-          <div className="product-title ">
+        <div className="banner-details col-8 d-flex flex-column justify-content-center ps-md-5">
+          <div className="product-title">
             <motion.h4
               layout
               key={item.id}
@@ -28,7 +28,7 @@ const Banner = () => {
               animate={{ x: 0, opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.5 }}
               transition={{ duration: 1, ease: "easeInOut" }}
-              className="m-0"
+              className="m-0 p-0"
             >
               {item.title}
             </motion.h4>
@@ -46,7 +46,7 @@ const Banner = () => {
               {item.brand}
             </motion.h1>
           </div>
-          <div className="product-category">
+          <div className="product-category text-nowrap">
             <motion.h1
               layout
               key={item.id + "category"}
@@ -72,7 +72,7 @@ const Banner = () => {
             </motion.button>
           </div>
         </div>
-        <div className="banner-image col-5 d-flex align-items-center">
+        <div className="banner-image col-5 d-flex align-items-center p-sm-5">
           <motion.div
             layout
             key={item.id + "image"}

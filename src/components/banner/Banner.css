@@ -1,9 +1,9 @@
 .banner{
   background-color: #FFA725;
   margin: 10px;
-  height: 50vh;
+  height: 55vh;
   border-radius: 25px;
-  padding: 20px;
+  padding: 10px;
 }
 .product-category h1{
   color: #ffff;
@@ -19,4 +19,35 @@
   border-radius: 10px;
   color: #ffff;
   font-weight: 500;
+}
+@media only screen and (max-width:900px){
+  .product-category h1{
+    font-size: 3em;
+    text-wrap: nowrap;
+  }
+}
+
+
+@media only screen and (max-width:572px){
+  .product-category h1{
+    font-size: 2em;
+    text-wrap: nowrap;
+  }.banner-image img{
+    width: 150px;
+  }.banner-image{
+    padding-right: 20px;
+  }
+}
+@media only screen and (max-width:400px){
+  .product-category h1{
+    font-size: 25px;
+    text-wrap: nowrap;
+  }.banner-image{
+    padding-right: 20px;
+  }.banner{
+    height: 35vh;
+  }.banner-button button{
+    padding: 5px;
+    font-size: 10px;
+  }
 }
