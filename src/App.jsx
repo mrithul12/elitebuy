@@ -1,12 +1,13 @@
 import React from 'react'
-import Header from './components/header/Header'
-import Banner from './components/banner/Banner'
+import Home from './components/Home/Home'
+import Shope from './components/shop/Shope'
+
 
 const App = () => {
   return (
     <div>
-      <Header/>
-      <Banner/>
+      <Home/>
+      <Shope/>
     </div>
   )
 }

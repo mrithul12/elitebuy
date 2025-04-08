@@ -1,9 +1,10 @@
 .banner{
   background-color: #FFA725;
-  margin: 10px;
+  margin: 80px 10px 10px 10px;
   height: 55vh;
   border-radius: 25px;
   padding: 10px;
+  /* padding-top: 50px; */
 }
 .product-category h1{
   color: #ffff;

@@ -8,9 +8,9 @@ const Header = () => {
 
   return (
     <>
-      <div className='header container-fluid d-flex justify-content-between align-items-center position-relative'>
+      <div className='header container-fluid d-flex justify-content-between align-items-center '>
         {/* Left section: Logo + Menu */}
-        <div className="header-list-start d-flex align-items-center gap-4">
+        <div className="header-list-start d-flex align-items-center gap-4 position-relative">
           <div className="logo">
             <img src={logo} alt="logo" />
           </div>
