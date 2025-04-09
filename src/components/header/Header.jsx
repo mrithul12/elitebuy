@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './Header.css';
 import logo from '../../assets/logo.png';
 import { AlignJustify, Facebook, Instagram, Linkedin, ShoppingBag, X } from 'lucide-react';
+import { CartContext } from '../context/CartContext';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
+  const {cart} = useContext(CartContext)
+  
+
 
   return (
     <>
@@ -17,8 +22,8 @@ const Header = () => {
           
           <div className="header-list d-none d-sm-block">
             <ul className='d-flex gap-4 m-0 list-unstyled'>
-              <li>Home</li>
-              <li>Shop</li>
+              <li><NavLink to={"/"}>Home</NavLink></li>
+              <li><NavLink to={"/Shope"}>Shop</NavLink></li>
               <li>About Us</li>
               <li>Blog</li>
             </ul>
@@ -29,7 +34,7 @@ const Header = () => {
         <div className="header-list d-flex align-items-center">
           <ul className='d-flex m-0 list-unstyled gap-3 pe-4'>
             <li>Login</li>
-            <li><ShoppingBag /></li>
+            <li className='d-flex'><ShoppingBag />{cart.length > 0 && cart.length}</li>
           </ul>
 
           <AlignJustify onClick={() => setToggle(true)} className='d-sm-none d-block menu-icon' />

@@ -52,7 +52,7 @@ const Banner = () => {
               key={item.id + "category"}
               initial={{ x: -200, opacity: 0, scale: 0.8 }}
               animate={{ x: 0, opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.5 }}
+              exit={{x:-10, opacity: 0, scale: 0.5 }}
               transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
               className="m-0"
             >
